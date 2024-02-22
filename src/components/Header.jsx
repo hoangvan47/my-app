@@ -6,23 +6,23 @@ const Header = () => {
       id: 1,
       title: "home",
       href: "/",
-      isActive: true,
-    },
-    {
-      id: 2,
-      title: "Courses",
-      href: "/courses",
       isActive: false,
     },
     {
+      id: 2,
+      title: "courses",
+      href: "/courses",
+      isActive: true,
+    },
+    {
       id: 3,
-      title: "Pricing",
+      title: "pricing",
       href: "/pricing",
       isActive: false,
     },
     {
       id: 4,
-      title: "Reviews",
+      title: "reviews",
       href: "/reviews",
       isActive: false,
     },
@@ -35,12 +35,17 @@ const Header = () => {
           <img src="img/logo.svg" alt="Lesson" />
 
           <div className="ml-auto flex items-center gap-10">
-            <Link
-              href="/"
-              className={`font-semibold text-base leading-7 decoration-[#171100]`}
-            >
-              Home
-            </Link>
+            {navbar.map((item) => (
+              <Link
+                href={item.href}
+                key={item.id}
+                className={`font-semibold text-base leading-7 ${
+                  item.isActive ? `text-[#171100]` : `text-[#ffc146]`
+                } capitalize`}
+              >
+                {item.title}
+              </Link>
+            ))}
           </div>
           <div>
             <button>
