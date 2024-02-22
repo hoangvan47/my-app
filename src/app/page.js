@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 import Card from "@/components/Card";
+import Card2 from "@/components/Card2";
 export default function Home() {
   const data = [
     {
@@ -84,7 +85,16 @@ export default function Home() {
       </div>
 
       {/* image */}
-      <div className="mt-14 flex items-center justify-between"></div>
+      <div className="mt-14 flex items-center justify-between">
+        {data2.map((item) => (
+          <Card2
+            key={item.id}
+            imageURL={item.image}
+            date={item.date}
+            title={item.title}
+          />
+        ))}
+      </div>
     </div>
   );
 }

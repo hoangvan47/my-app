@@ -3,10 +3,10 @@ import React from "react";
 const Card2 = ({ imageURL, date, title }) => {
   return (
     <div className="w-[370px] h-[466px] bg-primary rounded-2xl">
-      <img src="img/image3.png" alt="" className="max-h-250 object-cover" />
+      <img src={imageURL} alt="" className="max-h-250 object-cover" />
       <div className="px-5">
         <div className="flex items-center justify-between mt-5">
-          <img src={imageURL || ""} alt="" />
+          <img src={""} alt="" />
           <div className=" font-normal text-sm leading-6 text-secondary border-b -ml-7">
             {date}
           </div>
