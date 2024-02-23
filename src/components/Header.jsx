@@ -28,7 +28,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className="w-[1440px] bg-[#FFFCF4] ml-auto mr-auto ">
+    <div className="bg-[#FFFCF4]">
       <div className="w-[1170px] ml-auto mr-auto pt-11 pb-16 ">
         {/* Navbar */}
         <div className="flex items-center justify-between">
