@@ -6,40 +6,36 @@ const Hero = () => {
   const hero = [
     {
       id: 1,
-      imageURL: (
-        <DiGoogleDrive className="w-12 h-12 p-3 rounded-full bg-[#FFF9E8]" />
-      ),
+      imageURL: <DiGoogleDrive />,
       title: "20 Courses",
       description: "UI/UX Design",
     },
     {
       id: 2,
-      imageURL: (
-        <DiUbuntu className="w-12 h-12 p-3 rounded-full bg-[#FFF9E8]" />
-      ),
+      imageURL: <DiUbuntu />,
       title: "20 Courses",
       description: "Development",
     },
     {
       id: 3,
-      imageURL: (
-        <DiPhotoshop className="w-12 h-12 p-3 rounded-full bg-[#FFF9E8]" />
-      ),
+      imageURL: <DiPhotoshop />,
       title: "30 Courses",
       description: "Marketing",
     },
   ];
 
   return (
-    <div className="w-[1440px] ml-auto mr-auto bg-[#FFFCF4]">
-      <div className="w-[1170px] pt-16 pb-16 flex ml-auto mr-auto">
+    <div className=" bg-[#FFFCF4]">
+      <div className="w-[1170px] flex mx-auto pt-11 pb-16">
         {/* media-block */}
         <div className="w-[570px] relative">
           <img src="img/guy-lesson.png" alt="Lesson" />
           <div className="w-[270px] items-center p-6 bg-white rounded-l-xl absolute right-0 bottom-12">
             {hero.map((item) => (
               <div className="flex items-center py-[14px]" key={item.id}>
-                <div>{item.imageURL}</div>
+                <div className="w-12 h-12 p-3 rounded-full bg-[#FFF9E8] flex items-center justify-center">
+                  {item.imageURL}
+                </div>
                 <div className="ml-4">
                   <div className="font-normal text-sm leading-6 text-gray-400 ">
                     {item.title}

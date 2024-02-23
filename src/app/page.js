@@ -3,6 +3,7 @@ import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 import Card from "@/components/Card";
 import Card2 from "@/components/Card2";
+import Hero from "@/components/Hero";
 export default function Home() {
   const data = [
     {
@@ -61,8 +62,10 @@ export default function Home() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto">
-      <div className="flex justify-between item-center">
+    <div className="mx-auto">
+      <Hero />
+
+      {/* <div className="flex justify-between item-center">
         <div>
           <div className="font-bold text-[38px] leading-[48px] font-serif ">
             Our popular courses
@@ -84,7 +87,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* image */}
       <div className="mt-14 flex items-center justify-between">
         {data2.map((item) => (
           <Card2
@@ -96,7 +98,7 @@ export default function Home() {
         ))}
       </div>
 
-      <div>ABC</div>
+      <div>ABC</div> */}
     </div>
   );
 }
