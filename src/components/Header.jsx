@@ -33,7 +33,9 @@ const Header = () => {
       <div className="w-[1170px] ml-auto mr-auto pt-11 pb-16 ">
         {/* Navbar */}
         <div className="flex items-center justify-between">
-          <img src="img/logo.svg" alt="Lesson" />
+          <Link href={"/"}>
+            <img src="img/logo.svg" alt="Lesson" />
+          </Link>
 
           <div className="ml-auto flex items-center gap-10">
             {navbar.map((item) => (
