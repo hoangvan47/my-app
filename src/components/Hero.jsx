@@ -29,7 +29,11 @@ const Hero = () => {
       <div className="w-[1170px] flex mx-auto pt-11 pb-16">
         {/* media-block */}
         <div className="w-[570px] relative">
-          <img src="img/guy-lesson.png" alt="Lesson" />
+          <img
+            src="img/fix-avatar.jpeg"
+            alt="Lesson"
+            className="rounded-2xl "
+          />
           <div className="w-[270px] items-center p-6 bg-white rounded-l-xl absolute right-0 bottom-12">
             {hero.map((item) => (
               <div className="flex items-center py-[14px]" key={item.id}>
