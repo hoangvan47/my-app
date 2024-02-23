@@ -1,26 +1,55 @@
 import React from "react";
-
+import { DiGoogleDrive } from "react-icons/di";
+import { DiUbuntu } from "react-icons/di";
+import { DiPhotoshop } from "react-icons/di";
 const Hero = () => {
+  const hero = [
+    {
+      id: 1,
+      imageURL: (
+        <DiGoogleDrive className="w-12 h-12 p-3 rounded-full bg-[#FFF9E8]" />
+      ),
+      title: "20 Courses",
+      description: "UI/UX Design",
+    },
+    {
+      id: 2,
+      imageURL: (
+        <DiUbuntu className="w-12 h-12 p-3 rounded-full bg-[#FFF9E8]" />
+      ),
+      title: "20 Courses",
+      description: "Development",
+    },
+    {
+      id: 3,
+      imageURL: (
+        <DiPhotoshop className="w-12 h-12 p-3 rounded-full bg-[#FFF9E8]" />
+      ),
+      title: "30 Courses",
+      description: "Marketing",
+    },
+  ];
+
   return (
     <div className="w-[1440px] ml-auto mr-auto bg-[#FFFCF4]">
       <div className="w-[1170px] pt-16 pb-16 flex ml-auto mr-auto">
         {/* media-block */}
         <div className="w-[570px] relative">
           <img src="img/guy-lesson.png" alt="Lesson" />
-          <div className="w-[270px] flex items-center p-6 bg-white rounded-l-xl absolute right-0 bottom-12">
-            <img
-              className="w-12 h-12 p-3 rounded-full bg-[#FFF9E8] "
-              src="img/ui-ux.svg"
-              alt=""
-            />
-            <div className="ml-4">
-              <div className="font-normal text-sm leading-6 text-gray-400 ">
-                20 Courses
+          <div className="w-[270px] items-center p-6 bg-white rounded-l-xl absolute right-0 bottom-12">
+            {hero.map((item) => (
+              <div className="flex items-center py-[14px]" key={item.id}>
+                <div>{item.imageURL}</div>
+                <div className="ml-4">
+                  <div className="font-normal text-sm leading-6 text-gray-400 ">
+                    {item.title}
+                  </div>
+                  <div className="font-semibold text-lg leading-7 text-black">
+                    {item.description}
+                  </div>
+                </div>
               </div>
-              <div className="font-semibold text-lg leading-7 text-black">
-                UI/UX Design
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         {/* content-Block */}
@@ -46,6 +75,23 @@ const Hero = () => {
               <div className="ml-3 font-semibold text-lg leading-7 text-black">
                 Watch Video
               </div>
+            </div>
+          </div>
+          <div className="mt-12 font-normal text-lg leading-8 text-[#5F5B53]">
+            Recent engagement
+          </div>
+          <div className="mt-2 flex items-center">
+            <div className="font-normal text-lg leading-8 text-[#5F5B53]">
+              <strong className="font-bold text-[44px] leading-[54[px] text-[#171100]">
+                50K
+              </strong>
+              Students
+            </div>
+            <div className="ml-7 font-normal text-lg leading-8 text-[#5F5B53]">
+              <strong className="font-bold text-[44px] leading-[54[px] text-[#171100]">
+                70+
+              </strong>
+              Courses
             </div>
           </div>
         </div>
