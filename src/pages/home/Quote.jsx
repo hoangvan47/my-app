@@ -2,7 +2,7 @@ import React from "react";
 import { RxAvatar } from "react-icons/rx";
 import { SiGravatar } from "react-icons/si";
 import { TbBrandGravatar } from "react-icons/tb";
-import { InfoUser } from "./InfoUser";
+import { InfoUser } from "../../components/home/InfoUser";
 const Quote = () => {
   const quote = [
     {

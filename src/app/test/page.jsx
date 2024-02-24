@@ -1,8 +1,8 @@
 import React from "react";
-import Card2 from "@/pages/home/Card2";
-import Header from "@/components/layouts/Header";
+import Card2 from "@/components/home/BlogCard";
+import Header from "@/layouts/Header";
 import Hero from "@/pages/home/Hero";
-import Card from "@/pages/home/Card";
+import Card from "@/components/home/CardCourse";
 import Quote from "@/pages/home/Quote";
 const TestPage = () => {
   return (
