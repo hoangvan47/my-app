@@ -1,5 +1,5 @@
 import React from "react";
-import Card2 from "@/components/Card2";
+import Card2 from "@/pages/home/Card2";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 const Course = () => {
