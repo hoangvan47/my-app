@@ -1,29 +1,35 @@
 import React from "react";
-import Card2 from "@/pages/home/Card2";
+import CardCourse from "@/components/home/CardCourse";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 const Course = () => {
-  const data2 = [
+  const courseData = [
     {
       id: 1,
       image:
         "https://images.unsplash.com/photo-1707845696801-4d4b89e510fa?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      date: "21 November 2021",
-      title: "How to become a pro web designer in 2022 and get remot job?",
+      title: "Basic web design",
+      subTitle:
+        "Get the best course, gain knowledge and shine for your future career.",
+      price: "$120.75",
     },
     {
       id: 2,
       image:
-        "https://plus.unsplash.com/premium_photo-1705091310316-fc9fa5335b17?q=80&w=3435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      date: "21 November 2021",
-      title: "How to become a pro web designer in 2022 and get remot job?",
+        "https://images.unsplash.com/photo-1707845696801-4d4b89e510fa?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "UI/UX design",
+      subTitle:
+        "Get the best course, gain knowledge and shine for your future career.",
+      price: "$120.75",
     },
     {
       id: 3,
       image:
-        "https://images.unsplash.com/photo-1707385060909-34a3c220696a?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      date: "21 November 2021",
-      title: "How to become a pro web designer in 2022 and get remot job?",
+        "https://images.unsplash.com/photo-1707845696801-4d4b89e510fa?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Web App design",
+      subTitle:
+        "Get the best course, gain knowledge and shine for your future career.",
+      price: "$120.75",
     },
   ];
 
@@ -53,12 +59,13 @@ const Course = () => {
         </div>
 
         <div className="mt-14 flex items-center justify-between">
-          {data2.map((item) => (
-            <Card2
+          {courseData.map((item) => (
+            <CardCourse
               key={item.id}
               imageURL={item.image}
-              date={item.date}
               title={item.title}
+              subTitle={item.subTitle}
+              price={item.price}
             />
           ))}
         </div>

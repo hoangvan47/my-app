@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ imageURL, title, price, description }) => {
+const CardCourse = ({ imageURL, title, price, subTitle }) => {
   return (
     <div className=" max-w-[370px] max-h-[466px] bg-primary rounded-xl">
       <div className="max-h-[278px] bg-cover overflow-hidden">
@@ -19,7 +19,7 @@ const Card = ({ imageURL, title, price, description }) => {
           </div>
         </div>
         <div className="mt-1.5 font-normal text-sm leading-6 text-secondary w-[326px]">
-          {description}
+          {subTitle}
         </div>
         <div className="mt-3 flex items-center justify-between">
           <div className="font-semibold text-lg leading-7">{price}</div>
@@ -32,4 +32,4 @@ const Card = ({ imageURL, title, price, description }) => {
   );
 };
 
-export default Card;
+export default CardCourse;
