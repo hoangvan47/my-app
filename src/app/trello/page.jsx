@@ -1,5 +1,5 @@
-"use client";
 import React from "react";
+import Board from "@/components/trello/Board";
 
 const Trello = () => {
   const alowDrop = (e) => {
@@ -19,47 +19,8 @@ const Trello = () => {
   };
 
   return (
-    <div className="w-full">
-      <div className="flex items-center gap-2 w-full">
-        <div
-          className="bg-red-600 h-screen w-4/12 p-4 flex flex-col gap-3"
-          onDragOver={alowDrop}
-          onDrop={onDrop}
-          id="div1"
-        >
-          <div
-            className="w-full max-h-6 bg-white text-black"
-            draggable="true"
-            id="1"
-            onDragStart={handleDragStart}
-          >
-            To Do 1
-          </div>
-
-          <div
-            className="w-full max-h-6 bg-white text-black"
-            draggable="true"
-            id="2"
-            onDragStart={handleDragStart}
-          >
-            To Do 2
-          </div>
-        </div>
-
-        <div
-          className="bg-green-600 h-screen w-4/12 p-4 flex flex-col gap-3"
-          onDragOver={alowDrop}
-          onDrop={onDrop}
-          id="div2"
-        ></div>
-
-        <div
-          className="bg-yellow-600 h-screen w-4/12 p-4 flex flex-col gap-3"
-          onDragOver={alowDrop}
-          onDrop={onDrop}
-          id="div3"
-        ></div>
-      </div>
+    <div className="bg-[#FFFCF4] ">
+      <Board />
     </div>
   );
 };
