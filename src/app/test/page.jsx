@@ -7,7 +7,7 @@ import Quote from "@/components/Quote";
 const TestPage = () => {
   return (
     <div>
-      <Quote />
+      <Hero />
     </div>
   );
 };
