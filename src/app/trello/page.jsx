@@ -1,23 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState, createContext, useEffect } from "react";
 import Board from "@/pages/trello/Board";
+import { trello } from "@/utils/mockData";
+
+export const BoardTrello = createContext();
 
 const Trello = () => {
   const [boards, setBoards] = useState([]);
 
-  const onDrop = (e) => {
-    e.preventDefault();
-    console.log(
-      `🚀 ~ onDrop ~ e.dataTransfer.getData("text"):`,
-      e.dataTransfer.getData("text")
-    );
-    e.target.appendChild(
-      document.getElementById(e.dataTransfer.getData("text"))
-    );
-  };
-
-  const handleDragStart = (e) => {
-    e.dataTransfer.setData("text", e.target.id);
-  };
+  useEffect(() => {
+    setBoards(trello[0]);
+  }, [trello[0]]);
 
   return (
     <BoardTrello.Provider value={{ boards }}>
