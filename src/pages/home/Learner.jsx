@@ -1,20 +1,25 @@
 import React from "react";
+import LearnerCard from "@/components/home/LearnerCard";
+import { InfoUser } from "@/components/home/InfoUser";
 
 const Learner = () => {
+  const Learner = [
+    {
+      id: 1,
+      imageURL1:
+        "https://images.unsplash.com/photo-1708834269879-e7bd99d7e77c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageURL2:
+        "https://images.unsplash.com/photo-1708793699440-67fa853abd4d?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ];
   return (
     <div className="w-[1170px] mx-auto mt-[200px] flex items-center">
-      <div className="w-[49%] h-[438px] flex items-center relative">
-        <img
-          src="img/learner-1.png"
-          alt=""
-          className="  absolute bottom-0 rounded-2xl w-[270px] h-[404px] "
+      {Learner.map((Learner) => (
+        <LearnerCard
+          imageURL1={Learner.imageURL1}
+          imageURL2={Learner.imageURL2}
         />
-        <img
-          src="img/learner-2.png"
-          alt=""
-          className="top-0 ml-[300px] rounded-2xl"
-        />
-      </div>
+      ))}
 
       <div className="w-[51%] ml-[130px]">
         <div className="font-bold text-4xl leading-[48px] w-[470px]">

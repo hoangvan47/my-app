@@ -4,7 +4,7 @@ import Header from "@/layouts/Header";
 import Hero from "@/pages/home/Hero";
 import Card from "@/components/home/CardCourse";
 import Quote from "@/pages/home/Quote";
-import Learner from "@/components/home/Learner";
+import Learner from "@/pages/home/Learner";
 const TestPage = () => {
   return (
     <div>
