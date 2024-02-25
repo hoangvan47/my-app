@@ -2,7 +2,8 @@ import Hero from "@/pages/home/Hero";
 import Course from "@/pages/home/Course";
 import Quote from "@/pages/home/Quote";
 import Learner from "@/pages/home/Learner";
-import Takenext from "@/pages/home/Takenext";
+import TakeNext from "@/pages/home/Takenext";
+import OurBlog from "@/pages/home/Ourblog";
 export default function Home() {
   return (
     <div className="mx-auto">
@@ -10,8 +11,8 @@ export default function Home() {
       <Course />
       <Quote />
       <Learner />
-      <Takenext />
-      <div>ABC</div>
+      <TakeNext />
+      <OurBlog />
     </div>
   );
 }
