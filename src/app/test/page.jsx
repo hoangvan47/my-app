@@ -6,10 +6,11 @@ import Card from "@/components/home/CardCourse";
 import Quote from "@/pages/home/Quote";
 import Learner from "@/pages/home/Learner";
 import Takenext from "@/pages/home/Takenext";
+import Ourblog from "@/pages/home/Ourblog";
 const TestPage = () => {
   return (
     <div>
-      <Takenext />
+      <Ourblog />
     </div>
   );
 };
