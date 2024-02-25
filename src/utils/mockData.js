@@ -151,3 +151,12 @@ export const infouser = {
   description: "Student of Web Design",
   text: "Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned.",
 };
+export const takenext = {
+  id: 1,
+  title:
+    "Take the next step toward your personal and professional goals with Lesson.",
+  description:
+    "Take the next step toward. Join now to receive personalized  and more recommendations from the full Coursera catalog.",
+  imgURL:
+    "https://images.unsplash.com/photo-1683009427041-d810728a7cb6?q=80&w=3386&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+};
