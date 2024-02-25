@@ -2,16 +2,27 @@
 import React, { useContext } from "react";
 import { IoMdAdd } from "react-icons/io";
 import Column from "./Column";
-import { BoardTrello } from '@/app/trello/page'
+import { BoardTrello } from "@/app/trello/page";
 
 const Board = () => {
-  const { boards } = useContext(BoardTrello)
+  const { columns } = useContext(BoardTrello);
+
+  const alowDrop = (e) => {
+    console.log(`🚀 ~ alowDrop ~ e:`, e)
+    e.preventDefault();
+  };
+
+  const onDrop = (e) => {
+    e.preventDefault();
+  };
 
   return (
-    <div className="max-w-[1170px] mx-auto pb-10  overflow-x-hidden flex items-baseline gap-3">
-      <div className="overflow-x-auto flex items-center gap-5">
-        {boards?.columns?.map((column) => (
-          <Column key={column.id} title={column.title} cards={column.cards} />
+    <div className="max-w-[1170px] h-full mx-auto pb-10  overflow-x-hidden flex items-baseline gap-3">
+      <div className="overflow-x-auto flex gap-5 h-full">
+        {columns?.map((column) => (
+          <div onDrop={onDrop} onDragOver={alowDrop} key={column.id}>
+            <Column id={column.id} title={column.title} cards={column.cards} />
+          </div>
         ))}
       </div>
 

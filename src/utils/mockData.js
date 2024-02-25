@@ -55,7 +55,33 @@ export const trello = [
             columnId: 2,
           },
         ],
-      }
+      },
+      {
+        id: 3,
+        title: "Done",
+        cardIds: [7, 8, 9],
+        boardId: 1,
+        cards: [
+          {
+            id: 7,
+            title: "Learn React",
+            description: "React is a popular library",
+            columnId: 3,
+          },
+          {
+            id: 8,
+            title: "Learn Next.js",
+            description: "Next.js is a popular library",
+            columnId: 3,
+          },
+          {
+            id: 9,
+            title: "Learn GraphQL",
+            description: "GraphQL is a popular library",
+            columnId: 3,
+          },
+        ],
+      },
     ],
   },
 ];
