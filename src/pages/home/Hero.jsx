@@ -1,39 +1,16 @@
 import React from "react";
-import { DiGoogleDrive } from "react-icons/di";
-import { DiUbuntu } from "react-icons/di";
-import { DiPhotoshop } from "react-icons/di";
+import { hero } from "@/utils/mockData";
 const Hero = () => {
-  const hero = [
-    {
-      id: 1,
-      imageURL: <DiGoogleDrive />,
-      title: "20 Courses",
-      description: "UI/UX Design",
-    },
-    {
-      id: 2,
-      imageURL: <DiUbuntu />,
-      title: "20 Courses",
-      description: "Development",
-    },
-    {
-      id: 3,
-      imageURL: <DiPhotoshop />,
-      title: "30 Courses",
-      description: "Marketing",
-    },
-  ];
-
   return (
     <div className=" bg-[#FFFCF4]">
       <div className="w-[1170px] flex mx-auto pt-11 pb-16">
-        {/* media-block */}
         <div className="w-[570px] relative">
           <img
             src="img/fix-avatar.jpeg"
             alt="Lesson"
             className="rounded-2xl "
           />
+
           <div className="w-[270px] items-center p-6 bg-white rounded-l-xl absolute right-0 bottom-12">
             {hero.map((item) => (
               <div className="flex items-center py-[14px]" key={item.id}>
@@ -52,7 +29,7 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        {/* content-Block */}
+
         <div className="w-[600px] mt-16 ml-32">
           <div className="font-bold text-[58px] leading-[68px] text-black ">
             Learn without limits and spread knowledge.
