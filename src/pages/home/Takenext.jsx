@@ -17,7 +17,7 @@ const Takenext = () => {
       <div className="w-[51%]">
         <img
           src={takenext.imgURL}
-          className="ml-[130px] w-[470px] h-[440px] round-[20px]"
+          className="ml-[130px] w-[470px] h-[440px] rounded-3xl"
           alt=""
         />
       </div>
