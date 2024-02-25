@@ -160,3 +160,26 @@ export const takenext = {
   imgURL:
     "https://images.unsplash.com/photo-1683009427041-d810728a7cb6?q=80&w=3386&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 };
+export const ourblog = [
+  {
+    id: 1,
+    imgURL:
+      "https://images.unsplash.com/photo-1682687980976-fec0915c6177?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "21 November 2021",
+    title: "How to become a pro web designer in 2022 and get remot job?",
+  },
+  {
+    id: 2,
+    imgURL:
+      "https://images.unsplash.com/photo-1708834269879-e7bd99d7e77c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "21 November 2021",
+    title: "How to become a pro web designer in 2022 and get remot job?",
+  },
+  {
+    id: 3,
+    imgURL:
+      "https://images.unsplash.com/photo-1708771754562-163e2994c815?q=80&w=3056&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "21 November 2021",
+    title: "How to become a pro web designer in 2022 and get remot job?",
+  },
+];
