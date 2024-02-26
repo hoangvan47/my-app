@@ -12,6 +12,7 @@ export default function Home() {
       <Learner />
       <Takenext />
       <div>ABC</div>
+      <div>aqadasd</div>
     </div>
   );
 }
