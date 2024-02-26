@@ -15,6 +15,7 @@ export default function Home() {
       <Ourblog />
       <div>ABC</div>
       <div>aqadasd</div>
+      <div>I</div>
     </div>
   );
 }
